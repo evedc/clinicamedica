@@ -101,7 +101,6 @@
 
 .foto-box img {
     width: 700px;
-    cursor: pointer;
     margin-left: 12%;
 }
 
@@ -119,7 +118,7 @@
 .sobre-parte1 img {
     width: 500px;
     border-radius: 20px;
-    cursor: pointer;
+
 }
 
 .img-sobre img {
@@ -256,4 +255,62 @@ h3 {
 
 .inovacao-box h2 {
     margin-top: 55px;
+}
+
+.especialidades-box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 1rem;
+    margin-top: -200px;
+
+}
+
+.container-especialidades {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0101018f;
+    color: #fff;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
 }
