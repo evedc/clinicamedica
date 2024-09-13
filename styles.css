@@ -314,3 +314,47 @@ h3 {
 .overlay:hover {
     opacity: 1;
 }
+
+.contato {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+    background: #7AB2B2;
+}
+
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+        "form info"
+        "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.form {
+    grid-area: form;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact {
+    padding: 40%;
+    background: #fff;
+    box-shadow: 0 5px 35px rgb(0, 0, 0);
+}
+
+.contact h4 {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
