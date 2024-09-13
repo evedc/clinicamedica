@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Clínica Médica - MedBem </title>
 </head>
 
@@ -103,60 +106,47 @@
             </div>
 
         </section>
+        <!--CONTATO-->
 
-        <h3>Contato</h3>
-        <div class="contato" id="contato">
-
-            <div class="box">
-                <div class="contact form">
-                    <h4>Envie sua Mensagem</h4>
-                    <form>
-                        <div class="formBox">
-                            <div class="row50">
-                                <div class="inputBox">
-                                    <span>Primeiro Nome</span>
-                                    <input type="text" placeholder="Maria">
-                                </div>
-                                <div class="inputBox">
-                                    <span>Sobrenome</span>
-                                    <input type="text" placeholder="Silva">
-                                </div>
+        <h3>Entre em contato conosco</h3>
+        <div class="contato-box" id="contato">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <h4>Mande sua mensagem</h4>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Seu nome">
                             </div>
-                            <div class="row50">
-                                <div class="inputBox">
-                                    <span>Primeiro Nome</span>
-                                    <input type="text" placeholder="Maria">
-                                </div>
-                                <div class="inputBox">
-                                    <span>Sobrenome</span>
-                                    <input type="text" placeholder="Silva">
-                                </div>
-
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Seu e-mail">
                             </div>
-
-                            <div class="row100">
-                                <div class="inputBox">
-                                    <span>Mensagem</span>
-                                    <textarea placeholder="Digite aqui a sua mensagem!"></textarea>
-                                </div>
+                            <div class="form-group">
+                                <textarea style="resize:none" name="message"
+                                    placeholder="Sua mensagem aqui!"></textarea>
                             </div>
-
-                            <div class="row100">
-                                <div class="inputBox">
-
-                                    <input type="submit" value="Enviar">
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </form>
+                            <button type="submit">Envie a sua mensagem</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Informações de contato</h4>
+                        <p><i class="fas fa-phone"></i>+1 123 456 789</p>
+                        <p><i class="fas fa-envelope"></i>email@exemplo.com</p>
+                        <p><i class="fas fa-map-marker"></i>Rua 123, bairro 456, Cidade, Estado</p>
+                    </div>
                 </div>
-                <div class="contact info"></div>
-                <div class="contact map"></div>
             </div>
-
         </div>
+
+        <footer>
+            <div class="logo-rodape">
+                <h1 class="agencia">MedBem - Clínica Médica</h1>
+                <p style="color:white">Desenvolvido por Évelim Dornelles </p>
+            </div>
+            <b style="color:white"> © Todos os direitos reservados</b>
+        </footer>
+
+
 
     </main>
     <script src="index.js"></script>
