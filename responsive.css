@@ -1,0 +1,181 @@
+/* Estilos Responsivos */
+@media screen and (max-width: 1200px) {
+    .texto-box {
+        width: 70%;
+    }
+
+    .foto-box img {
+        width: 500px;
+    }
+
+    .sobre-box,
+    .equipe-box,
+    .etica-box,
+    .inovacao-box {
+        width: 45%;
+        text-align: center;
+    }
+
+    .container-especialidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-port {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding: 0.5rem 5%;
+    }
+
+    .texto-box h1,
+    .texto-box h2 {
+        font-size: 28px;
+    }
+
+    .texto-box p {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .foto-box img {
+        width: 400px;
+        margin-left: 0;
+    }
+
+    .sobre-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .sobre-box,
+    .equipe-box,
+    .etica-box,
+    .inovacao-box {
+        width: 48%;
+    }
+
+    .img-port {
+        width: 250px;
+        height: 350px;
+    }
+
+    .container-especialidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .apresentacao-container {
+        flex-direction: column;
+    }
+
+    .texto-box {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .foto-box img {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .sobre-parte1 {
+        flex-direction: column;
+    }
+
+    .sobre-parte2 {
+        text-align: center;
+        margin-right: 0;
+
+    }
+
+    .sobre-parte1 img {
+        width: 80%;
+        text-align: center;
+    }
+
+    .container-especialidades {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .img-port {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre-box,
+    .equipe-box,
+    .etica-box,
+    .inovacao-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar a {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+    .texto-box h1,
+    .texto-box h2 {
+        font-size: 24px;
+    }
+
+    .texto-box p {
+        font-size: 18px;
+    }
+
+    .foto-box img {
+        width: 280px;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .container-especialidades {
+        grid-template-columns: 1fr;
+    }
+
+    .img-port {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .texto-box {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .sobre-parte1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre-parte2 {
+        margin-top: 20px;
+        text-align: center;
+
+    }
+}

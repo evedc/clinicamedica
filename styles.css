@@ -106,18 +106,29 @@
 
 
 .sobre-parte1 {
-    width: 100%;
-    margin-top: 40px;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
 }
 
 .img-sobre {
-    width: 50%;
+    flex: 1 1 45%;
+    width: 300px;
+
+    display: flex;
+    justify-content: center;
+
 }
 
 .sobre-parte1 img {
     width: 500px;
-    border-radius: 20px;
+    height: auto;
+    border-radius: 10px;
+
 
 }
 
@@ -126,20 +137,31 @@
 }
 
 .sobre-parte2 {
-    width: 50%;
-    margin-right: 20%;
-    margin-top: 50px;
+    flex: 1 1 35%;
+
+    font-family: "Poppins", sans-serif;
 }
 
 .sobre-parte2 h3 {
-    font-size: 36px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    /* Reduz o espaçamento abaixo do título */
+    text-align: center;
+    color: #333;
 }
 
 .sobre-parte2 p {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.4;
+    /* Reduz o espaçamento entre as linhas no parágrafo */
+    text-align: justify;
+    color: #555;
     font-family: "Poppins", sans-serif;
-    text-align: center;
+    margin-top: 0;
+    /* Remove qualquer margem superior no parágrafo */
 }
+
+
 
 .sobre-container {
     width: 100%;
@@ -258,36 +280,30 @@ h3 {
 }
 
 .especialidades-box {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    gap: 1rem;
-    margin-top: -200px;
-
+    padding: 20px;
 }
 
 .container-especialidades {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Alterei o minmax para 200px, garantindo que as imagens não sumam em telas menores */
     gap: 1.5rem;
 }
 
 .img-port {
-    width: 360px;
-    height: 460px;
+    width: 100%;
+    height: 300px;
+    /* Ajustei a altura para 300px em telas menores, garantindo que as imagens fiquem proporcionais */
     background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
-    border-radius: 40px;
+    background-position: center;
+    transition: background-position 0.5s ease-in-out;
+    border-radius: 20px;
     cursor: pointer;
     position: relative;
 }
 
 .img-port:hover {
-    background-position: 100% 100%;
+    background-position: bottom;
 }
 
 .overlay {
@@ -296,9 +312,9 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0101018f;
+    background-color: rgba(1, 1, 1, 0.6);
     color: #fff;
-    border-radius: 40px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -306,11 +322,29 @@ h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     opacity: 0;
-    transition: .5s;
+    transition: opacity 0.5s ease-in-out;
 }
 
-.overlay:hover {
+.img-port:hover .overlay {
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .img-port {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-especialidades {
+        grid-template-columns: 1fr;
+        /* Mostra uma coluna de imagens em telas pequenas */
+    }
+
+    .img-port {
+        height: 200px;
+        /* Ajuste adicional para manter as imagens visíveis e bem proporcionais em telas pequenas */
+    }
 }
 
 .contato-box {
